@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --m2k-navy: #060b16;
+  --m2k-navy-2: #0d1526;
+  --m2k-navy-3: #141f36;
+  --m2k-offwhite: #f6f3ec;
+  --m2k-offwhite-dim: #b7bac4;
+  --m2k-electric: #3d6bff;
+  --m2k-electric-2: #6e93ff;
+}
+
+@theme inline {
+  --color-navy: var(--m2k-navy);
+  --color-navy-2: var(--m2k-navy-2);
+  --color-navy-3: var(--m2k-navy-3);
+  --color-offwhite: var(--m2k-offwhite);
+  --color-offwhite-dim: var(--m2k-offwhite-dim);
+  --color-electric: var(--m2k-electric);
+  --color-electric-2: var(--m2k-electric-2);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-manrope);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--m2k-navy);
+  color: var(--m2k-offwhite);
+}
+
+::selection {
+  background: var(--m2k-electric);
+  color: var(--m2k-offwhite);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 7s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+@keyframes status-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.animate-status-dot {
+  animation: status-dot 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-pulse-glow,
+  .animate-marquee,
+  .animate-status-dot {
+    animation: none;
+  }
+}
