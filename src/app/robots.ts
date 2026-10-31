@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://m2k-fintech.com/sitemap.xml",
+    sitemap: "https://www.m2k-fintech.com/sitemap.xml",
   };
 }

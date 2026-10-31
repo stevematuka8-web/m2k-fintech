@@ -12,8 +12,8 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "M2K Fintech",
-  url: "https://m2k-fintech.com",
-  logo: "https://m2k-fintech.com/logo.webp",
+  url: "https://www.m2k-fintech.com",
+  logo: "https://www.m2k-fintech.com/logo.webp",
   description:
     "M2K Fintech conçoit quatre produits indépendants — Cash Authentic, EcoBudgetPlus, MoriahPay et Entre-Nous — portés par une infrastructure commune d'intelligence artificielle.",
   email: "service.commercial@m2k-fintech.fr",

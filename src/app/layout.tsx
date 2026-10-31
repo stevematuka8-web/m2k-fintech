@@ -21,7 +21,7 @@ const manrope = Manrope({
   weight: ["400", "500", "600", "700", "800"],
 });
 
-const SITE_URL = "https://m2k-fintech.com";
+const SITE_URL = "https://www.m2k-fintech.com";
 const SITE_TITLE = "M2K Fintech — Entreprise technologique financière internationale";
 const SITE_DESCRIPTION =
   "M2K Fintech conçoit quatre produits indépendants — Cash Authentic, EcoBudgetPlus, MoriahPay et Entre-Nous — portés par une infrastructure commune d'intelligence artificielle.";
