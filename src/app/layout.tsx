@@ -33,10 +33,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  icons: {
-    icon: "/logo.webp",
-    apple: "/logo.webp",
-  },
   openGraph: {
     type: "website",
     locale: "fr_FR",
