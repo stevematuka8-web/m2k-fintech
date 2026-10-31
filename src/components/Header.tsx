@@ -24,7 +24,7 @@ export function Header() {
               width={1254}
               height={1254}
               priority
-              className="h-11 w-11 object-contain"
+              className="h-14 w-14 object-contain"
             />
           </motion.div>
         </a>

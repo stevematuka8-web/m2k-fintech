@@ -17,7 +17,7 @@ export function Footer() {
               alt="M2K Fintech"
               width={1254}
               height={1254}
-              className="h-12 w-12 object-contain"
+              className="h-16 w-16 object-contain"
             />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-offwhite-dim">
               Entreprise technologique financière internationale.
