@@ -60,10 +60,9 @@ export default function Confidentialite() {
                 <li>Contenu de votre message (obligatoire)</li>
               </ul>
               <p>
-                Aucune autre donnée n&apos;est collectée automatiquement :
-                ce site ne crée pas de compte utilisateur et ne dépose
-                aucun cookie de mesure d&apos;audience ou de publicité (voir
-                section 6).
+                Ce site ne crée pas de compte utilisateur. Il utilise des
+                outils de mesure d&apos;audience — voir le détail et vos
+                options en section 7 (Cookies et traceurs).
               </p>
             </Section>
 
@@ -88,8 +87,9 @@ export default function Confidentialite() {
                 d&apos;infrastructure :
               </p>
               <ul>
-                <li>Vercel Inc. (hébergement du site et traitement des requêtes du formulaire)</li>
+                <li>Vercel Inc. (hébergement du site, traitement des requêtes du formulaire, mesure d&apos;audience sans cookie)</li>
                 <li>Supabase Inc. (stockage applicatif, le cas échéant)</li>
+                <li>Google Ireland Ltd. (Google Analytics, uniquement si vous avez accepté les cookies)</li>
               </ul>
               <p>
                 Vos données ne sont ni vendues, ni louées, ni communiquées à
@@ -123,15 +123,24 @@ export default function Confidentialite() {
             </Section>
 
             <Section title="7. Cookies et traceurs">
-              <p>
-                En l&apos;état actuel, ce site ne dépose aucun cookie de
-                mesure d&apos;audience, de publicité ou de personnalisation.
-                Si un outil d&apos;analyse (statistiques de visite) était
-                ajouté ultérieurement, cette section serait mise à jour et
-                un bandeau de consentement conforme aux recommandations de
-                la CNIL serait mis en place avant tout dépôt de cookie non
-                essentiel.
-              </p>
+              <p>Ce site utilise deux outils de mesure d&apos;audience :</p>
+              <ul>
+                <li>
+                  <strong>Vercel Analytics</strong> — ne dépose aucun
+                  cookie et n&apos;utilise aucun identifiant persistant ;
+                  il est actif en permanence et ne nécessite pas de
+                  consentement.
+                </li>
+                <li>
+                  <strong>Google Analytics</strong> — dépose des cookies de
+                  mesure d&apos;audience (ex. <code>_ga</code>). Il
+                  n&apos;est chargé qu&apos;après votre consentement
+                  explicite, recueilli via le bandeau affiché lors de votre
+                  première visite. Vous pouvez refuser ou changer d&apos;avis
+                  à tout moment en effaçant les données de ce site dans
+                  votre navigateur, ce qui réaffichera le bandeau.
+                </li>
+              </ul>
             </Section>
 
             <Section title="8. Vos droits">

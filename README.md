@@ -104,6 +104,21 @@ Ces éléments sont volontairement marqués `[PLACEHOLDER]` dans le code
 - **Données structurées** : schéma `Organization` (JSON-LD) sur la home
   (`src/app/page.tsx`), avec nom, adresse, contact.
 
+## Analytics & cookies
+
+- **Vercel Analytics** (`@vercel/analytics`) — actif en permanence, ne
+  dépose aucun cookie, pas de consentement requis.
+- **Google Analytics** (`src/components/GoogleAnalytics.tsx`) — chargé
+  uniquement si la variable d'environnement `NEXT_PUBLIC_GA_MEASUREMENT_ID`
+  (format `G-XXXXXXX`, depuis analytics.google.com) est définie **et** que
+  le visiteur a accepté les cookies via la bannière
+  (`src/components/CookieConsent.tsx`). Sans cet ID, rien n'est chargé.
+- Pour l'activer : ajouter `NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXX` dans
+  les variables d'environnement Vercel (et `.env.local` en dev), puis
+  redéployer.
+- La politique de confidentialité (`src/app/confidentialite/page.tsx`,
+  section 7) documente ces deux outils.
+
 ## Notes techniques
 
 - Next.js 16 avec Cache Components active une vérification stricte : toute
