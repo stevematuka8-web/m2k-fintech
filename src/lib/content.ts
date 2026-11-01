@@ -11,6 +11,7 @@ export type Product = {
   accent: string; // couleur d'identité propre au produit
   mark: "orbit" | "growth" | "shield" | "grid"; // forme du monogramme de repli (si pas de vrai logo)
   logo?: string; // chemin public vers le vrai logo du produit, une fois reçu
+  url?: string; // site du produit, si déjà en ligne — rend la carte cliquable
 };
 
 export const products: Product[] = [
@@ -53,6 +54,7 @@ export const products: Product[] = [
     accent: "#B06BFF",
     mark: "grid",
     logo: "/products/entre-nous.png",
+    url: "https://www.entre-nous.shop",
   },
 ];
 

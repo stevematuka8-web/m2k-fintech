@@ -20,8 +20,17 @@ export function Products() {
           {products.map((p, i) => (
             <Reveal key={p.slug} delay={i * 0.08}>
               <article
-                className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-navy-2 p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-white/20 hover:shadow-[0_20px_60px_-24px_rgba(0,0,0,0.6)]"
+                className={`group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-navy-2 p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-white/20 hover:shadow-[0_20px_60px_-24px_rgba(0,0,0,0.6)] ${p.url ? "cursor-pointer" : ""}`}
               >
+                {p.url && (
+                  <a
+                    href={p.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`Ouvrir ${p.name}`}
+                    className="absolute inset-0 z-20"
+                  />
+                )}
                 <div
                   aria-hidden
                   className="absolute -right-16 -top-16 h-48 w-48 rounded-full opacity-20 blur-3xl transition-opacity duration-300 group-hover:opacity-30"
