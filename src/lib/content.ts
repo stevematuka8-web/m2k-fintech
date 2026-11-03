@@ -34,6 +34,7 @@ export const products: Product[] = [
     accent: "#3DB88B",
     mark: "growth",
     logo: "/products/ecobudgetplus.png",
+    url: "https://www.ecobudgetplus.com",
   },
   {
     slug: "moriahpay",
